@@ -9,6 +9,4 @@ RUN pip3 install -r /code/python-sryapicli/requirements.txt
 
 WORKDIR /code/python-sryapicli
 
-RUN python setup.py install
-
 ENTRYPOINT ["python3", "sryapi_cli.py", "-v"]
