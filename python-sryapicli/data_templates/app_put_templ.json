@@ -1,0 +1,44 @@
+{
+  "name": "wordpress",
+  "instances": 2,
+  "volumes": [
+    {
+      "hostPath": "/var/host/path",
+      "containerPath": "/var/container/path"
+    }
+  ],
+  "portMappings": [
+    {
+      "appPort": 80,
+      "protocol": 1,
+      "isUri": 1,
+      "type": 1,
+      "mapPort": 8080,
+      "uri": "shurenyun.com"
+    }
+  ],
+  "cpus": 1,
+  "mem": 512,
+  "cmd": "echo \"shurenyun awesome!\"",
+  "envs": [
+    {
+      "key": "Foo",
+      "value": "bar"
+    }
+  ],
+  "imageName": "catalog.shurenyun.com/library/wordpress",
+  "imageVersion": "v0.1",
+  "forceImage": true,
+  "network": "BRIDGE",
+  "constraints": [
+    [
+      "string"
+    ]
+  ],
+  "parameters": [
+    {
+      "key": "string",
+      "value": "string"
+    }
+  ]
+}

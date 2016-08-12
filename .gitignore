@@ -1,0 +1,6 @@
+.idea
+*.py[co]
+*.swp
+.ropeproject/*
+python-sryapicli/.sryapi-cli.json
+python-sryapicli/.coverage

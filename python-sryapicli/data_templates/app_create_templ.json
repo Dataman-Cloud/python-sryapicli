@@ -1,0 +1,50 @@
+{
+  "name":"wordpress",
+  "instances":1,
+  "tasks":0,
+  "volumes":[],
+  "logPaths":[],
+  "cmd":"",
+  "alias":"geydmnb2o5xxezdqojsxg4y0",
+  "canaryInstances":0,
+  "iplist":[],
+  "parameters":[
+    {
+      "key":"add-host",
+      "value":"mysql:172.17.0.1"
+    }
+  ],
+  "imageVersion":"latest",
+  "imageName":"catalog.shurenyun.com/library/wordpress",
+  "network":"BRIDGE",
+  "envs":[
+    {
+      "key":"WORDPRESS_DB_USER",
+      "value":"root"
+    },
+    {
+      "key":"WORDPRESS_DB_HOST",
+      "value":"mysql:3306"
+    },
+    {
+      "key":"WORDPRESS_DB_PASSWORD",
+      "value":"foobar"
+    }
+  ],
+  "canary":0,
+  "update":"2016-07-30T15:52:09+08:00",
+  "forceImage": false,
+  "cpus": 0.1,
+  "ports":[
+    {
+      "appPort":80,
+      "uri":"",
+      "protocol":1,
+      "isUri":2,
+      "mapPort":80,
+      "type":1
+    }
+  ],
+  "unique":false,
+  "mem":16
+}
